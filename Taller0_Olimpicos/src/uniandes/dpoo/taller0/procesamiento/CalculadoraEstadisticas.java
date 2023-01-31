@@ -434,7 +434,7 @@ public class CalculadoraEstadisticas
 		for (int i = 0; i < atletas.size() && elPais == null; i++)
 		{
 			if (atletas.get(i).darNombre().equals(nombreAtleta))
-				elPais = atletas.get(i).darPais().toString();
+				elPais = atletas.get(i).darPais().darNombre();
 		}
 		return elPais;
 	}
